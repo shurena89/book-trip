@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <title>Book Trip</title>
+</head>
+<body class="page">
+    <h1>Welcome to Shurena Tours</h1>
+<!--btn-->
+    <button type="button" id="open-btn">
+        <p>Book Your Best Trip</p>
+        <h4>NOW</h4>
+    </button>
+<!--modal-->
+    <div id="modal-container">
+        <p id="close-x"><i class="fa-solid fa-xmark"></i></p>
+<form>
+    <label for="fname"><p>Your Name:</p></label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="phone"><p>Your Phone Number:</p></label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Enter Your phone number">
+
+    <label for="country">
+       <p>Select Travel Destination:</p></label>
+    <select id="country" name="country">
+        <option value="australia">Cairo</option>
+        <option value="canada">Aswan</option>
+        <option value="usa">Luxor</option>
+        <option value="usa">Alexandria</option>
+    </select>
+
+    <button id="btn-close">Submit Request</button>
+</form>
+    </div>
+  
+
+<!--JS script-->
+<script src="app.js"></script>
+</body>
+</html>
